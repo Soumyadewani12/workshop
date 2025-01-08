@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 200%;
+}
+.container .sidebar{
+    background-color: lightpink;
+    width: 100%;
+    padding: 40px;
+}
+.content p{
+    font-size: 20px;
+    padding: 10px;
+}
+.navbar{
+    margin-top: 50px;
+    position: sticky;
+    top: 10px;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li{
+    font-size: 21px;
+    background-color: antiquewhite;
+    margin: 10px;
+    margin-bottom: 10px;
+    
+    padding: 5px;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

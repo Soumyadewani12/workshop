@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(69, 86, 86);
+}
+.pro{
+    /* position:relative; */
+    width:300px;
+    height: 400px;
+    background-color: rgb(249, 251, 254);
+    margin:0 auto;
+    margin-top: 90px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+.pro h1{
+    margin-top:32px;
+    transition: transform 0.3s ease;
+}
+.pro img{
+    height: 320px;
+    width: 300px;
+   object-fit: cover;
+}
+
+.pro .info ul{
+   list-style: none;
+   display: flex;
+   gap:5px;
+   /* justify-content: space-between; */
+
+}
+.pro:hover {
+    background-color: rgb(0, 0, 255); 
+    transform: translateY(-10px); /* Blue background color on hover */
+}
+.pro:hover .info {
+    
+    bottom: 0; /* Slide the content up */
+}
+.pro:hover h1{
+    transform: translateY(-10px);
+} 
+.pro .info {
+    position: absolute;
+    bottom: -100%; /* Hide the content below the container initially */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.3s ease; /* Smooth transition for sliding up */
+}
+.r{
+    height:20px;
+    width: 20px;
+    background-color: brown;
+}
+.r1{
+    height:20px;
+    width: 20px;
+    background-color: rgb(42, 48, 165);
+}
+.r2{
+    height:20px;
+    width: 20px;
+    background-color: rgb(75, 171, 46);
+}
+.r3{
+    height:20px;
+    width: 20px;
+    background-color: rgb(217, 49, 184);
+}
+
+/* .pro .info{
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.4s ease-in-out;
+}
+.pro .info ul li {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+/* .info{
+    margin-top:0px;
+} */ 
