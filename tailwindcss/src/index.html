@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind layout</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header class="bg-rose-700 flex justify-between items-center text-lg text-white px-2 py-2"><h1 class="m-5 font-bold text-2xl">Logo</h1>
+    <ul class="flex p-8 gap-5 font-bold">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">gallery</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+        <li class="bg-white text-black rounded px-3 py-1 hover:bg-black hover:text-white"><a href="">Login</a></li>
+    </ul>
+    </header>
+<section id="hero" class="bg-slate-700 py-8 px-12 flex">
+    
+    <div class="flex-center mx-2 space-between w-2/4 my-12">
+        <h1 class="text-4xl	 text-white font-bold">Vrindavan Hotel</h1>
+        <p class="text-xl text-white my-6" >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quod</p>
+        <a class="text-black bg-white px-5 rounded-lg text-lg py-2 font-semibold hover:bg-black hover:text-white" href="">Contact Us</a>
+        </div>
+    <div class="w-2/4"><img src="/src/images/resturent.jpeg" alt="" class="w-3/4 ml-auto mr-8 h-80">
+    </div>
+</section>
+<section class="bg-slate-500 py-7" >
+<div>
+<h1 class=" text-center text-white font-bold text-2xl ">OUR MENU</h1>
+<div class="flex flex-wrap items-center justify-center">
+    <div class=" items-center text-center max-[700px]:w-[95%] w-[40%] min[900px]:w-[30%] px-6"><img class=" w-full h-56 rounded-xl my-6 flex " src="/src/images/pizza.jpg" alt="" >
+        <p class="text-white text-2xl">Pizza</p>
+        <p class="text-white text-sm">$3</p>
+        <button class="bg-white text-black w-36 p-2 my-3 rounded-lg font-semibold hover:bg-slate-200">
+            Add to Cart
+        </button>
+    </div>
+    <div class="flex-col items-center text-center max-[700px]:w-[95%] w-[40%] min[900px]:w-[30%] px-6"><img class=" w-full h-56 rounded-xl my-6" src="/src/images/burger.webp" alt="">
+        <p class="text-white text-2xl">Pizza</p>
+        <p class="text-white text-sm">$3</p>
+        <button class="bg-white text-black w-36 p-2 my-3 rounded-lg font-semibold hover:bg-slate-200">
+            Add to Cart
+        </button>
+    </div>
+    <div class=" flex-col items-center text-center max-[700px]:w-[95%] w-[40%] min[900px]:w-[30%] px-6"><img class=" w-full h-56 rounded-xl my-6" src="/src/images/chaumin.webp" alt="">
+        <p class="text-white text-2xl">Patties</p>
+        <p class="text-white text-sm">$2</p>
+        <button class="bg-white text-black w-36 p-2 my-3 rounded-lg font-semibold hover:bg-slate-200">
+            Add to Cart
+        </button></div>
+    <!-- </div>
+    <div class="mx-6  flex-wrap flex gap-5 justify-between items-center "> -->
+        <div class="flex-col items-center text-center max-[700px]:w-full w-[31%] min[900px]:w-[25%] px-6"><img class=" w-full h-56 rounded-xl my-6" src="/src/images/patties.jpg" alt="">
+            <p class="text-white text-2xl">Samosa</p>
+            <p class="text-white text-sm">$1</p>
+            <button class="bg-white text-black w-36 p-2 my-3 rounded-lg font-semibold hover:bg-slate-200">
+                Add to Cart
+            </button>
+        </div>
+        <div class="flex-col items-center text-center max-[700px]:w-full w-[31%] min[900px]:w-[25%] px-6"><img class="w-full h-56 rounded-xl my-6" src="/src/images/pao_bhaji.jpg" alt="">
+            <p class="text-white text-2xl">Burger</p>
+            <p class="text-white text-sm">$4</p>
+            <button class="bg-white text-black w-36 p-2 my-3 rounded-lg font-semibold hover:bg-slate-200">
+                Add to Cart
+            </button>
+        </div>
+        <div class=" flex-col items-center text-center max-[700px]:w-full w-[31%] min[900px]:w-[25%] px-6"><img class=" w-full h-56 rounded-xl my-6" src="/src/images/samosa.jpg" alt="">
+            <p class="text-white text-2xl">Chowmein</p>
+            <p class="text-white text-sm">$2</p>
+            <button class="bg-white text-black w-36 p-2 my-3 rounded-lg font-semibold hover:bg-slate-200">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+</div>
+</section> 
+
+<section id="hero" class="bg-slate-400 px-15 py-8 px-12">
+<div>
+<h1 class=" text-center text-white font-bold text-2xl">OUR CHEFS</h1>
+<div class="flex flex-wrap justify-between items-center">
+    <div class="items-center text-center w-[40%] lg:w-[31%] min-[700px]:w-[95%] px-6 " ><img class=" w-full h-56 rounded-xl my-6" src="/src/images/sanjeev.jpg" alt="" >
+        <p class="text-white text-2xl">Sanjeev Kapoor</p>
+        <p class="text-white text-sm">Hotel Management (3 yr experience)</p>
+    </div>
+    <div class="items-center text-center  w-[40%] lg:w-[31%] px-6"><img class=" w-full h-56 rounded-xl my-6" src="/src/images/ranvir_brar.webp" alt="">
+        <p class="text-white text-2xl">Ranveer Brar</p>
+        <p class="text-white text-sm">Hotel Management (3 yr experience)</p>
+    </div>
+    <div class=" items-center text-center  w-[40%] lg:w-[31%] px-6"><img class=" w-full h-56 rounded-xl my-6" src="/src/images/chef3.jpg" alt="">
+        <p class="text-white text-2xl">Vikas Khanna</p>
+        <p class="text-white text-sm">Hotel Management (3 yr experience)</p>
+    </div>
+</div>
+
+
+</section>
+</div>
+</body>
+</html>
